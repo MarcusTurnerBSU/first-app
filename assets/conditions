@@ -1,0 +1,37 @@
+IF TWO SPORTS ARE SIMILAR 
+
+if (baseball and cricket selected) {
+    output error message saying 'sorry, these sports are too similar. Try another two sports'
+}
+
+NO GAME CURRENTLY AVAILABLE 
+
+if (Rugby and Volleyball selected) {
+    output message 'sorry, this combination of sports is currently in the works'
+}
+
+IF TWO SPORTS MATCH
+
+if (Football and Golf selected) {
+    output the rules for the new game
+}
+
+THE ORDER
+
+Title - Sports Calculator
+Images - All the icons of the sports
+Calculation - (plus sign and equal sign) the addition and equals of two sports selected
+Two sport images put together -
+
+When first image is tapped, place the first image at the bottom and second image on the top to the side
+      <View>
+        <Image source={baseball}></Image>
+        <Image style={styles.overlay} source={basketball}></Image>
+      </View>
+        overlay: {
+    marginLeft: 30,
+    position: "absolute"
+  }
+
+  then the new sports name at the bottom with an 'i' icon for instructions on the new sport
+  retry button appears to allow user to start again
